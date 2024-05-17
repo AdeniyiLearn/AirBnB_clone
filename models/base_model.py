@@ -20,7 +20,7 @@ class BaseModel:
             self.updated_at = self.created_at
 
     def __str__(self) -> str:
-        return f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}"
+        return f"[{self.__class__.__name__}]({self.id}) {self.__dict__}"
 
     def save(self) -> None:
         '''this method save data to a json file'''
